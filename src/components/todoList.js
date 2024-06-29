@@ -70,8 +70,8 @@ function TodoList({
 
   return (
     <div
-      className={`bg-teal-600 p-2 rounded-lg min-w-[60%] flex space-x-3 duration-200 ${
-        todoObject.isCompleted ? " bg-green-400" : ""
+      className={` bg-teal-400 p-2 rounded-3xl  flex space-x-3 duration-200  ${
+        todoObject.isCompleted ? " bg-green-600" : ""
       }
        `}
     >
