@@ -80,7 +80,16 @@ function TodoList({
         type="checkbox"
         className="cursor-pointer"
         checked={todoObject.isCompleted}
-        onChange={toggleCompleteCheckbox}
+        // onChange={toggleCompleteCheckbox}
+        onChange={(e) =>
+          updateTodoFromArray((prev) =>
+            prev.map((eachTodo) =>
+              eachTodo.id === todoObject.id
+                ? { ...eachTodo, isCompleted: !todoObject.isCompleted }
+                : eachTodo
+            )
+          )
+        }
       />
       {/* Input for individual todo */}
       <input
