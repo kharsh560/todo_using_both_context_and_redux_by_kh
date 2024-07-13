@@ -32,11 +32,11 @@ function TodoList({
     }
   };
 
-  const toggleCompleteCheckbox = () => {
-    // setIsCompleted((prev) => !prev);
-    // See, you are being sent each of the individual todo object;
-    toggleComplete(todoObject.id);
-  };
+  // const toggleCompleteCheckbox = () => {
+  //   // setIsCompleted((prev) => !prev);
+  //   // See, you are being sent each of the individual todo object;
+  //   toggleComplete(todoObject.id);
+  // };
 
   const deleteTodoFromList = () => {
     console.log(todoObject.id);
@@ -56,17 +56,17 @@ function TodoList({
     }
   }, [isEditable]);
 
-  const expandTheTodo = () => {
-    // (e) => {
-    //   updateTodoFromArray((prev) =>
-    //     prev.map((eachTodo) =>
-    //       eachTodo.id === todoObject.id
-    //         ? { ...eachTodo, expand: !todoObject.expand }
-    //         : eachTodo
-    //     )
-    //   );
-    // };
-  };
+  // const expandTheTodo = () => {
+  //   (e) => {
+  //     updateTodoFromArray((prev) =>
+  //       prev.map((eachTodo) =>
+  //         eachTodo.id === todoObject.id
+  //           ? { ...eachTodo, expand: !todoObject.expand }
+  //           : eachTodo
+  //       )
+  //     );
+  //   };
+  // };
 
   return (
     <div
