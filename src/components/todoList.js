@@ -56,22 +56,22 @@ function TodoList({
     }
   }, [isEditable]);
 
-    const expandTheTodo = () => {
-        // (e) => {
-        //   updateTodoFromArray((prev) =>
-        //     prev.map((eachTodo) =>
-        //       eachTodo.id === todoObject.id
-        //         ? { ...eachTodo, expand: !todoObject.expand }
-        //         : eachTodo
-        //     )
-        //   );
-        // };
-    }
+  const expandTheTodo = () => {
+    // (e) => {
+    //   updateTodoFromArray((prev) =>
+    //     prev.map((eachTodo) =>
+    //       eachTodo.id === todoObject.id
+    //         ? { ...eachTodo, expand: !todoObject.expand }
+    //         : eachTodo
+    //     )
+    //   );
+    // };
+  };
 
   return (
     <div
       className={` bg-teal-400 p-2 rounded-3xl  flex space-x-3 duration-200  ${
-        todoObject.isCompleted ? " bg-green-600" : ""
+        todoObject.isCompleted ? " bg-emerald-400" : ""
       }
        `}
     >
